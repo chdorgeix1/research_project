@@ -39,6 +39,9 @@ def VDBarChart(df):
         #print(a, b, c)            
         #print(R1_list)
         #print(R2_list)
+        
+        # Plot the figure.
+
         if bar_chart_counter == 1:
             plt.bar(bar_chart_counter, a, color='b', label = 'R1 Only')
             plt.bar(bar_chart_counter, b, color='g', bottom=a, label = 'Both')
@@ -56,6 +59,10 @@ def VDBarChart(df):
         # pass handle & labels lists along with order as below
         plt.legend([handles[i] for i in order], [labels[i] for i in order])
         bar_chart_counter += 1
+    ax = plt.axes()
+    ax.set_xticks(list(range(1,len(df.samples.unique())+1)))
+    ax.set_xticklabels((df.samples.unique()).tolist())
+
     plt.show()
 
 
