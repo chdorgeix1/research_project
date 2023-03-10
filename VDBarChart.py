@@ -3,10 +3,10 @@ import numpy as np
 import pandas as pd
 
 def VDBarChart(df):
-    R1_list = []
-    R2_list = []
     bar_chart_counter = 1
     for sample in df.samples.unique():
+        R1_list = []
+        R2_list = []
         df1 = df[df['samples'] == sample]
         #print(df1.head())
         df2 = df1[df1['paired_end'] == 'R1']
@@ -35,13 +35,14 @@ def VDBarChart(df):
                 a += 1
             elif x == 0 and R1_list[i] == 1:
                 b += 1
-
+                
         #print(a, b, c)            
         #print(R1_list)
         #print(R2_list)
         
         # Plot the figure.
-
+        plt.rcParams["figure.figsize"] = (10,10)
+        
         if bar_chart_counter == 1:
             plt.bar(bar_chart_counter, a, color='b', label = 'R1 Only')
             plt.bar(bar_chart_counter, b, color='g', bottom=a, label = 'Both')
@@ -59,10 +60,11 @@ def VDBarChart(df):
         # pass handle & labels lists along with order as below
         plt.legend([handles[i] for i in order], [labels[i] for i in order])
         bar_chart_counter += 1
+
     ax = plt.axes()
     ax.set_xticks(list(range(1,len(df.samples.unique())+1)))
     ax.set_xticklabels((df.samples.unique()).tolist())
-
+    plt.savefig('R1R2.png')
     plt.show()
 
 
