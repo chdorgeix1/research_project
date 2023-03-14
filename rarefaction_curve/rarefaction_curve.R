@@ -8,7 +8,7 @@ require(raster)
 
 setwd("C:/Users/15404/Documents/GitHub/research_project/rarefaction_curve")
 
-df <- read.csv("rarefaction_data.csv", header = TRUE, sep = ",")
+df <- read.csv("rarefaction_data_202109_genus.csv", header = TRUE, sep = ",")
 
 ncol(df)
 df1 <- df
