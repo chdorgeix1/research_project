@@ -25,6 +25,8 @@ print(df)
 
 df[][4:ncol(df)] = trunc(df[][4:ncol(df)])
 print(df)
+
+
 raremax <- min(rowSums(df[][4:ncol(df)]))
 #print(raremax)
 
