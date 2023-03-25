@@ -8,7 +8,7 @@ require(raster)
 
 setwd("C:/Users/15404/Documents/GitHub/research_project/rarefaction_curve")
 
-df <- read.csv("rarefaction_data_202109_genus.csv", header = TRUE, sep = ",")
+df <- read.csv("rarefaction_data_202107_phylum.csv", header = TRUE, sep = ",")
 
 df1 <- df[1,]
 (dim(df1))
@@ -21,9 +21,11 @@ min_df =  min(df2[][4:ncol(df1)])
 min_df
 
 df1[][4:ncol(df1)]
-df1[][4:ncol(df1)] = df1[][4:ncol(df1)] /(min_df)
+#df1[][4:ncol(df1)] = df1[][4:ncol(df1)] / min_df
+df1[][4:ncol(df1)] = df1[][4:ncol(df1)] * 7303252
+#df1[][4:ncol(df1)] = (df1[][4:ncol(df1)]) / 876
 #df[][4:ncol(df)] = df[][4:ncol(df)]
-#print(df)
+print(df1[][4:ncol(df)] )
 
 df1[][4:ncol(df)] = trunc(df1[][4:ncol(df1)])
 #print(df)
@@ -43,6 +45,9 @@ Srare <- rarefy(df1[][4:ncol(df1)], raremax)
 
 rarecurve(df1[][4:ncol(df1)], step = 20, sample = raremax, col = "blue", cex = 0.6)
 
-rarecurve(df1[][4:ncol(df1)], step = 20, sample = raremax, col = "blue", cex = 0.6)
+#rarecurve(df1[][4:ncol(df1)], step = 20, sample = raremax, col = "blue", cex = 0.6)
 
 #YAYYYY ^^^
+
+#result <- specaccum(df1)
+

@@ -44,6 +44,7 @@ def data_processing(my_path, taxon_level, presence = True):
         #print(df1)
         #df1 = df1.replace(np.nan, 0)
         #df1 = df1.replace('NaN', 0)
+        df1 = df1.astype(float)
         if presence == True:
             df1 = df1.astype(float)
             df1[df1 > 0] = 1
