@@ -7,7 +7,9 @@ df <- read.csv("full_202109_genera_with_site.csv", header = TRUE, sep = ",")
 unique(df$site)
 
 #df1 <- df
-df1 <- subset(df, site == 'KCKT')
+df1 <- subset(df, site == 'WART')
+
+(df1[1,] == 0)
 
 numsites = (dim(unique(df1[c('site')]))[1])
 print(numsites)
