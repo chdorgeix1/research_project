@@ -1,0 +1,37 @@
+@SampleID:/sciclone/data10/chdorgeix/Christian/cat_5488/cat_JP_MKP_1_S6_L002_R1_001.fastq.gz
+@Version:Metalign
+@Ranks: superkingdom|phylum|class|order|family|genus|species|strain
+
+@@TAXID	RANK	TAXPATH	TAXPATHSN	PERCENTAGE	_CAMI_genomeID	_CAMI_OTU
+2	superkingdom	2	Bacteria	4.73339
+2759	superkingdom	2759	Eukaryota	0.02409
+201174	phylum	2|201174	Bacteria|Actinobacteria	4.73339
+4890	phylum	2759|4890	Eukaryota|Ascomycota	0.02409
+1760	class	2|201174|1760	Bacteria|Actinobacteria|Actinobacteria	4.73339
+147545	class	2759|4890|147545	Eukaryota|Ascomycota|Eurotiomycetes	0.02409
+85007	order	2|201174|1760|85007	Bacteria|Actinobacteria|Actinobacteria|Corynebacteriales	4.65507
+85012	order	2|201174|1760|85012	Bacteria|Actinobacteria|Actinobacteria|Streptosporangiales	0.07831
+33183	order	2759|4890|147545|33183	Eukaryota|Ascomycota|Eurotiomycetes|Onygenales	0.02409
+1762	family	2|201174|1760|85007|1762	Bacteria|Actinobacteria|Actinobacteria|Corynebacteriales|Mycobacteriaceae	4.58782
+83676	family	2|201174|1760|85012|83676	Bacteria|Actinobacteria|Actinobacteria|Streptosporangiales|Nocardiopsaceae	0.07831
+85026	family	2|201174|1760|85007|85026	Bacteria|Actinobacteria|Actinobacteria|Corynebacteriales|Gordoniaceae	0.06725
+34384	family	2759|4890|147545|33183|34384	Eukaryota|Ascomycota|Eurotiomycetes|Onygenales|Arthrodermataceae	0.02409
+1763	genus	2|201174|1760|85007|1762|1763	Bacteria|Actinobacteria|Actinobacteria|Corynebacteriales|Mycobacteriaceae|Mycobacterium	2.95699
+1866885	genus	2|201174|1760|85007|1762|1866885	Bacteria|Actinobacteria|Actinobacteria|Corynebacteriales|Mycobacteriaceae|Mycolicibacterium	1.63083
+2013	genus	2|201174|1760|85012|83676|2013	Bacteria|Actinobacteria|Actinobacteria|Streptosporangiales|Nocardiopsaceae|Nocardiopsis	0.07831
+2053	genus	2|201174|1760|85007|85026|2053	Bacteria|Actinobacteria|Actinobacteria|Corynebacteriales|Gordoniaceae|Gordonia	0.06725
+5550	genus	2759|4890|147545|33183|34384|5550	Eukaryota|Ascomycota|Eurotiomycetes|Onygenales|Arthrodermataceae|Trichophyton	0.02409
+1834112	species	2|201174|1760|85007|1762|1763|1834112	Bacteria|Actinobacteria|Actinobacteria|Corynebacteriales|Mycobacteriaceae|Mycobacterium|Mycobacterium sp. 852014-50255_SCH5639931	2.89304
+431269	species	2|201174|1760|85007|1762|1866885|431269	Bacteria|Actinobacteria|Actinobacteria|Corynebacteriales|Mycobacteriaceae|Mycolicibacterium|Mycolicibacterium setense	1.0397
+85693	species	2|201174|1760|85007|1762|1866885|85693	Bacteria|Actinobacteria|Actinobacteria|Corynebacteriales|Mycobacteriaceae|Mycolicibacterium|Mycolicibacterium monacense	0.59113
+1434837	species	2|201174|1760|85012|83676|2013|1434837	Bacteria|Actinobacteria|Actinobacteria|Streptosporangiales|Nocardiopsaceae|Nocardiopsis|Nocardiopsis sp. JB363	0.07831
+1834093	species	2|201174|1760|85007|85026|2053|1834093	Bacteria|Actinobacteria|Actinobacteria|Corynebacteriales|Gordoniaceae|Gordonia|Gordonia sp. 852002-50816_SCH5313054-c	0.06725
+1834089	species	2|201174|1760|85007|1762|1763|1834089	Bacteria|Actinobacteria|Actinobacteria|Corynebacteriales|Mycobacteriaceae|Mycobacterium|Mycobacterium sp. 852002-40037_SCH5390672	0.06395
+101480	species	2759|4890|147545|33183|34384|5550|101480	Eukaryota|Ascomycota|Eurotiomycetes|Onygenales|Arthrodermataceae|Trichophyton|Trichophyton interdigitale	0.02409
+1834112.0	strain	2|201174|1760|85007|1762|1763|1834112|1834112.0	Bacteria|Actinobacteria|Actinobacteria|Corynebacteriales|Mycobacteriaceae|Mycobacterium|Mycobacterium sp. 852014-50255_SCH5639931|Mycobacterium sp. 852014-50255_SCH5639931 unknown strain	2.89304	1834112.0	1834112
+431269.0.1	strain	2|201174|1760|85007|1762|1866885|431269|431269.0.1	Bacteria|Actinobacteria|Actinobacteria|Corynebacteriales|Mycobacteriaceae|Mycolicibacterium|Mycolicibacterium setense|	1.0397	431269.0.1	431269
+85693.0.1	strain	2|201174|1760|85007|1762|1866885|85693|85693.0.1	Bacteria|Actinobacteria|Actinobacteria|Corynebacteriales|Mycobacteriaceae|Mycolicibacterium|Mycolicibacterium monacense|	0.59113	85693.0.1	85693
+1434837.0	strain	2|201174|1760|85012|83676|2013|1434837|1434837.0	Bacteria|Actinobacteria|Actinobacteria|Streptosporangiales|Nocardiopsaceae|Nocardiopsis|Nocardiopsis sp. JB363|Nocardiopsis sp. JB363 unknown strain	0.07831	1434837.0	1434837
+1834093.0	strain	2|201174|1760|85007|85026|2053|1834093|1834093.0	Bacteria|Actinobacteria|Actinobacteria|Corynebacteriales|Gordoniaceae|Gordonia|Gordonia sp. 852002-50816_SCH5313054-c|Gordonia sp. 852002-50816_SCH5313054-c unknown strain	0.06725	1834093.0	1834093
+1834089.0	strain	2|201174|1760|85007|1762|1763|1834089|1834089.0	Bacteria|Actinobacteria|Actinobacteria|Corynebacteriales|Mycobacteriaceae|Mycobacterium|Mycobacterium sp. 852002-40037_SCH5390672|Mycobacterium sp. 852002-40037_SCH5390672 unknown strain	0.06395	1834089.0	1834089
+101480.0	strain	2759|4890|147545|33183|34384|5550|101480|101480.0	Eukaryota|Ascomycota|Eurotiomycetes|Onygenales|Arthrodermataceae|Trichophyton|Trichophyton interdigitale|Trichophyton interdigitale unknown strain	0.02409	101480.0	101480

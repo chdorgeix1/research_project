@@ -4,7 +4,7 @@ library(spatialEco)
 
 setwd("C:/Users/15404/Documents/GitHub/research_project/rarefaction_curve/")
 
-df <- read.csv("202107_phylum_with_site.csv", header = TRUE, sep = ",")
+df <- read.csv("202109_phylum_with_site.csv", header = TRUE, sep = ",")
 
 df1 = df[][5:ncol(df)]
 
@@ -25,7 +25,8 @@ boxplot(df$shannon ~ df$site, df,                                # Change main t
         main = "Shannon Diversity of Phylum by Site",
         xlab = "Site",
         ylab = "Shannon Diversity",
-        col = c('blue', 'red', 'darkgreen', 'yellow', 'orange', 'purple'))
+        col = c('blue', 'red', 'darkgreen', 'yellow', 'orange', 'purple'),
+        ylim = c(0.25, 1.7))
 
 boxplot(df$simpson ~ df$site, df,                                # Change main title and axis labels
         main = "Simpson Diversity of Phylum by Site",
