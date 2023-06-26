@@ -1,0 +1,12 @@
+Files in csv_folder:
+plant_microbe_genus
+	A csv containing the microbe data at a genus level for leaf microbes
+soil_microbe_genus
+	A csv containg microbe data at a genus level for soil microbes
+leaf_nutrients
+
+soil_nutrients
+
+plant_morphology
+
+plant_DNA

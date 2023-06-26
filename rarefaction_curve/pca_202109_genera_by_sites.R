@@ -5,17 +5,21 @@ library(ggplot2)
 setwd("C:/Users/15404/Documents/GitHub/research_project/rarefaction_curve/")
 
 # Read data from a file or create a data frame with relative abundance data
-data <- read.csv("full_202109_genera_with_site.csv", header = TRUE, sep = ",")
+data <- read.csv("soil_microbe_genus.csv", header = TRUE, sep = ",")
 # Load the iris dataset
+#data <- subset(data, site == 'FRW' | site == 'RRL')
+data <- data[, colSums(data != 0) > 0]
+
 
 # Perform a PCA on the dataset
-pca <- prcomp(data[][5:ncol(data)], center = TRUE, scale. = TRUE)
+pca <- prcomp(data[][4:ncol(data)], center = TRUE, scale. = TRUE)
 
 summary(pca)
 
 # Extract the first two principal components
 pc1 <- pca$x[,1]
 pc2 <- pca$x[,2]
+pc3 <- pca$x[,3]
 
 unique(data$site)
 
@@ -23,25 +27,48 @@ unique(data$site)
 site <- data$site
 coldf = data[c('site')]
 
-coldf[coldf == "WART"] <- 'darkred'
-coldf[coldf == "SBR"] <- 'forestgreen'
-coldf[coldf == "BTU"] <- 'yellow'
-coldf[coldf == "SKY"] <- 'blue'
+coldf[coldf == "RRL"] <- 'blue'
+coldf[coldf == "FRW"] <- 'blue'
+coldf[coldf == "MMP"] <- 'green'
+coldf[coldf == "PNR"] <- 'blue'
+coldf[coldf == "CMB"] <- 'green'
+coldf[coldf == "RF"] <- 'blue'
+coldf[coldf == "SLG"] <- 'blue'
+coldf[coldf == "LFS"] <- 'green'
+coldf[coldf == "SGC"] <- 'green'
+coldf[coldf == "RGT"] <- 'green'
+coldf[coldf == "HR"] <- 'blue'
+coldf[coldf == "PTW"] <- 'green'
+coldf[coldf == "GH"] <- 'green'
+coldf[coldf == "LM"] <- 'green'
+coldf[coldf == "MKP"] <- 'green'
+coldf[coldf == "TCP"] <- 'green'
+ 
+coldf[coldf == "WART"] <- 'red'
+coldf[coldf == "SBR"] <- 'red'
+coldf[coldf == "BTU"] <- 'red'
+coldf[coldf == "SKY"] <- 'red'
 coldf[coldf == "BLDTTT"] <- 'red'
-coldf[coldf == "KCKT"] <- 'orange'
+            
+coldf[coldf == "KCKT"] <- 'red'
 
-coldf
 
-pc1
+
+
 
 # Plot the PCA with colored points
+#, col = coldf$site
+#pch = 19,
 
-plot(pc1, pc2, col = coldf$site, pch = 19, 
-     xlab = "PC1(13.4)", ylab = "PC2(13.1)", main = "PCA plot of Sites by Genera")
+#unique(data$site)
+
+plot(pc1, pc2, cex =1,pch = 19, xlim = c(-45, 40), ylim = c(-50,40), col = coldf$site,
+     xlab = "PC1(15.2%)", ylab = "PC2(4%)", main = "PCA plot of Soil Microbe Sites by Genus")
 #legend("topright", legend = levels(unique(data$site)), col = coldf$site, 
 #       pch = 19, bty = "n")
-legend(-34.5, 28, legend=c(unique(data$site)), cex = 1, 
-        fill = c('darkred','forestgreen','yellow','blue','red','orange'))
+#, 
+fill = c('darkred','forestgreen','yellow','blue','red','orange')
+legend(8, 10, legend=c(unique(data$site)), cex = 1)
 
               
        
