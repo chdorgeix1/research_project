@@ -29,7 +29,7 @@ def import_all_data(sql_tables, common_column):
     
     return finaldf
 
-def import_microbe_data(sql_table):
+def import_single_table(sql_table):
     # Establish a database connection
     conn = sqlite3.connect(r'C:\Users\15404\Documents\GitHub\research_project\sql_db\test3.db')
     curs = conn.cursor()
