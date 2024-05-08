@@ -14,9 +14,11 @@ def data_processing(my_path, taxon_level, presence = True, leaf = False, f5488 =
     # reading given tsv file
     final_df = pd.DataFrame()
     for tsv in file_list:
+        print(tsv)
         line_list= []
         with open(my_path + tsv, 'r') as myfile: 
             for line in myfile:
+                print(line)
                 if taxon_level in line and '@' not in line:
                 # Replace every tab with comma
                     fileContent = re.sub("\t", ",", line)

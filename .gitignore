@@ -1,4 +1,4 @@
-
+*.csv
 *.png
 *.db
 *.db-journal
@@ -10,3 +10,7 @@
 *.png
 *.png
 *.db
+*.txt
+*.jpeg
+Final_Processing/Data/original_data/
+metalign_output_data/
